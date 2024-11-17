@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<! |\   __  \|\   ___  \|\   ___ \|\   __  \|\  ___ \     |\  \  /  /|    |\   ____\|\   __  \|\  \     |\   ____\
+\ \  \|\  \ \  \\ \  \ \  \_|\ \ \  \|\  \ \   __/|    \ \  \/  / /    \ \  \___|\ \  \|\  \ \  \    \ \  \___|
+\ \   __  \ \  \\ \  \ \  \ \\ \ \   _  _\ \  \_|/__   \ \    / /      \ \  \    \ \   __  \ \  \    \ \  \
+\ \  \ \  \ \  \\ \  \ \  \_\\ \ \  \\  \\ \  \_|\ \   \/  /  /        \ \  \____\ \  \ \  \ \  \____\ \  \____
+\ \__\ \__\ \__\\ \__\ \_______\ \__\\ _\\ \_______\__/  / /           \ \_______\ \__\ \__\ \_______\ \_______\
+\|__|\|__|\|__| \|__|\|_______|\|__|\|__|\|_______|\___/ /             \|_______|\|__|\|__|\|_______|\|_______|-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator App</title>
+</head>
+<body>
+<div class="calculator">
+  <input type="text" id="calcInput" disabled>
+  <div class="calc-keys">
+    <button class="btn" onclick="appendToInput('7')">7</button>
+    <button class="btn" onclick="appendToInput('8')">8</button>
+    <button class="btn" onclick="appendToInput('9')">9</button>
+    <button class="btn operator" onclick="appendToInput('/')">/</button>
+    <button class="btn" onclick="appendToInput('4')">4</button>
+    <button class="btn" onclick="appendToInput('5')">5</button>
+    <button class="btn" onclick="appendToInput('6')">6</button>
+    <button class="btn operator" onclick="appendToInput('*')">*</button>
+    <button class="btn" onclick="appendToInput('1')">1</button>
+    <button class="btn" onclick="appendToInput('2')">2</button>
+    <button class="btn" onclick="appendToInput('3')">3</button>
+    <button class="btn operator" onclick="appendToInput('-')">-</button>
+    <button class="btn" onclick="appendToInput('0')">0</button>
+    <button class="btn operator" onclick="calculateResult()">=</button>
+    <button class="btn operator" onclick="clearInput()">C</button>
+    <button class="btn operator" onclick="appendToInput('+')">+</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
